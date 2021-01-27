@@ -1,6 +1,11 @@
 function Activite1(){
     return(
-        <h1>Activite 1</h1>
+        <div>
+            <h1>Activite 1</h1> 
+            <span>salut {this.props.ma_variable} </span>
+
+        </div>
+        
     );
 }
 
