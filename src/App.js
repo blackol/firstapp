@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Activite3 from './Activite3';
+import Activite2 from './Activite2';
 
 function App() {
   return (
-    <Activite3 />
+    <Activite2 />
   );
 }
 
