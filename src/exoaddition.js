@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React,{Component}from 'react';
 class Exoaddition extends Component
   {
     constructor()
@@ -32,19 +32,12 @@ class Exoaddition extends Component
 
           
           <input type="text" value={this.state.nom} onChange={(event) => {this.maj(event)}} />
-
-          <button onClick={() => {this.setState((state) => {return {variable : this.maj + this.maj2};
-})}}>+</button>
-         
+         <span>+</span>
 
           <input type="text" value={this.state.pass} onChange={(event) => {this.maj2(event)}} />
           <br />
-
-
-
-          {this.state.nom + this.state.pass }
           <br></br>
-          <span>Resultat : {this.state.variable}</span>
+          <span>Resultat : {this.state.nom + this.state.pass }</span>
           </div>
         );
       }
