@@ -1,46 +1,63 @@
-import React,{Component}from 'react';
-class Exoaddition extends Component
+import React, {Component} from 'react';
+class Calculette1 extends Component
   {
     constructor()
       {
         super();
 
-        this.state = { 
-            variable : 0,
-            nom : "",
-            pass : ""
+        this.state = {
+          nombre1 : "0",
+          nombre2 : "0",
+          operateur : "+",
+          resultat : "0"
         };
       }
 
-    maj(event)
+    maj1(event)
       {
-        this.setState({nom : Number( event.target.value)})
+        this.setState({nombre1 : event.target.value})
       }
 
     maj2(event)
       {
-        this.setState({pass : Number(event.target.value)})
+        this.setState({nombre2 : event.target.value})
+      }
+
+    maj3(event)
+      {
+        this.setState({operateur : event.target.value});
+      }
+
+    calcul()
+      {
+        if(this.state.nombre1.length!=0&&this.state.nombre2.length!=0)
+          {
+            console.log(this.state.nombre1+this.state.operateur+this.state.nombre2);
+            this.setState({resultat : eval(this.state.nombre1+this.state.operateur+this.state.nombre2)});
+          }
       }
 
     render()
       {
         return (
           <div>
-          <h1>Addition</h1>
-         
+          <h1>Calculette 1</h1>
           <br />
 
-          
-          <input type="text" value={this.state.nom} onChange={(event) => {this.maj(event)}} />
-         <span>+</span>
-
-          <input type="text" value={this.state.pass} onChange={(event) => {this.maj2(event)}} />
-          <br />
-          <br></br>
-          <span>Resultat : {this.state.nom + this.state.pass }</span>
+          <input type="number" value={this.state.nombre1} onChange={(event) => {this.maj1(event)}} />
+          <select value={this.state.operateur} onChange={(event) => {this.maj3(event)}}>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+          </select>
+          <input type="number" value={this.state.nombre2} onChange={(event) => {this.maj2(event)}} />
+          <button onClick={() => {this.calcul()}}>=</button>
+          <span>{this.state.resultat}</span>
           </div>
         );
       }
   }
 
-export default Exoaddition;
+export default Calculette1;
+

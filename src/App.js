@@ -1,11 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
 import Activite2 from './Activite2';
-import Exoaddition from './exoaddition';
+import Calculette1 from './exoaddition';
 
 function App() {
   return (
-    <Exoaddition />
+    <Calculette1 />
    
   );
 }
