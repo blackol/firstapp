@@ -1,5 +1,6 @@
 import { findByLabelText } from '@testing-library/react';
 import React, {Component} from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import "./Calculatricecss.css";
 class Calculette extends Component
   {
@@ -47,24 +48,111 @@ class Calculette extends Component
             color: "white",
             backgroundColor: "DodgerBlue",
             padding: "10px",
-            fontFamily: "Arial"
+            fontFamily: "Arial",
+            height:"600px",
+            
+            
           };
+        const toi ={
+          backgroundColor: "yellow",
+          flexdirection :"row",
+        }
 
 
         return (
           <div >
 
-            <h1>Calculatrice</h1>
+            <h1>Calculatrice
+
+            </h1>
 
             <div style={mystyle}>
-                <h2>ok</h2>
+                <h1>Calculatrice ReactJS</h1>
                 <br></br>
-                <p>
-                    uibiubpubpububuigbg
-                    oubipubpiubpiub
-                    ivefgbpdgubgdb
-                    i9bpiubpubpuiojb
-                </p>
+                <input></input>
+                <br></br>
+                <text>attention ne pas oublier le npm install </text>
+
+                <div>
+                  <Row around = "xs" >
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>1</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>2</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>3</button>
+                    </Col>
+
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>+</button>
+                    </Col>
+                    
+                  </ Row >
+                </div>
+
+                <div>
+                  <Row around = "xs" >
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>4</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>5</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>6</button>
+                    </Col>
+
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>-</button>
+                    </Col>
+                    
+                  </ Row >
+                </div>
+
+                <div>
+                  <Row around = "xs" >
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>7</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>8</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>9</button>
+                    </Col>
+
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>+</button>
+                    </Col>
+                    
+                  </ Row >
+                </div>
+
+
+                <div>
+                  <Row around = "xs" >
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>0</button>
+                    </Col>
+                    
+                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                      <button>=</button>
+                    </Col>
+                    
+                   
+                  </ Row >
+                </div>
+
+
+
             </div>
 
           
