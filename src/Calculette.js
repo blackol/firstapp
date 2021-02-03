@@ -53,10 +53,7 @@ class Calculette extends Component
             
             
           };
-        const toi ={
-          backgroundColor: "yellow",
-          flexdirection :"row",
-        }
+        
 
 
         return (
