@@ -48,7 +48,7 @@ class Calculette extends Component
             color: "white",
             backgroundColor: "DodgerBlue",
             fontFamily: "Arial",
-            height:"600px",
+            height:"500px",
             width:"400px",
           };
         
@@ -76,61 +76,41 @@ class Calculette extends Component
                       <div>
                         <Row around = "xs" >
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>1</button>
+                            <button value="1">1</button>
                           </Col>
                           
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>2</button>
+                            <button value="2">2</button>
                           </Col>
                           
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>3</button>
+                            <button value="3" >3</button>
                           </Col>
 
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>+</button>
+                            <button value="+">+</button>
                           </Col>
                           
                         </ Row >
                       </div>
+                      
 
                       <div>
                         <Row around = "xs" >
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>4</button>
+                            <button value="4">4</button>
                           </Col>
                           
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>5</button>
+                            <button value="5">5</button>
                           </Col>
                           
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>6</button>
+                            <button value="6">6</button>
                           </Col>
 
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>-</button>
-                          </Col>
-                          
-                        </ Row >
-                      </div>
-
-                      <div>
-                        <Row around = "xs" >
-                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>7</button>
-                          </Col>
-                          
-                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>8</button>
-                          </Col>
-                          
-                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>9</button>
-                          </Col>
-
-                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>+</button>
+                            <button value="-">-</button>
                           </Col>
                           
                         </ Row >
@@ -140,14 +120,34 @@ class Calculette extends Component
                       <div>
                         <Row around = "xs" >
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>0</button>
+                            <button value="7" >7</button>
                           </Col>
                           
                           < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                            <button>=</button>
+                            <button value="8">8</button>
                           </Col>
                           
-                        
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button value="9" >9</button>
+                          </Col>
+
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button value="+" >+</button>
+                          </Col>
+                          
+                        </ Row >
+                      </div>
+
+
+                      <div>
+                        <Row around = "xs" >
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button value="0" >0</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button value="=" >=</button>
+                          </Col>
                         </ Row >
                       </div>
 
