@@ -47,11 +47,9 @@ class Calculette extends Component
         const mystyle = {
             color: "white",
             backgroundColor: "DodgerBlue",
-            padding: "10px",
             fontFamily: "Arial",
             height:"600px",
-            
-            
+            width:"400px",
           };
         
 
@@ -63,94 +61,106 @@ class Calculette extends Component
 
             </h1>
 
-            <div style={mystyle}>
-                <h1>Calculatrice ReactJS</h1>
-                <br></br>
-                <input></input>
-                <br></br>
-                <text>attention ne pas oublier le npm install </text>
+            <Row>
+              <Col xs={12}>
+                <Row center="xs">
+                  <Col xs={0} />
 
-                <div>
-                  <Row around = "xs" >
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>1</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>2</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>3</button>
-                    </Col>
+                        <div style={mystyle}>
+                          <h1>Calculatrice ReactJS</h1>
+                          <br></br>
+                          <input></input>
+                      <br></br>
+                      
 
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>+</button>
-                    </Col>
-                    
-                  </ Row >
-                </div>
+                      <div>
+                        <Row around = "xs" >
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>1</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>2</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>3</button>
+                          </Col>
 
-                <div>
-                  <Row around = "xs" >
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>4</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>5</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>6</button>
-                    </Col>
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>+</button>
+                          </Col>
+                          
+                        </ Row >
+                      </div>
 
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>-</button>
-                    </Col>
-                    
-                  </ Row >
-                </div>
+                      <div>
+                        <Row around = "xs" >
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>4</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>5</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>6</button>
+                          </Col>
 
-                <div>
-                  <Row around = "xs" >
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>7</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>8</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>9</button>
-                    </Col>
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>-</button>
+                          </Col>
+                          
+                        </ Row >
+                      </div>
 
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>+</button>
-                    </Col>
-                    
-                  </ Row >
-                </div>
+                      <div>
+                        <Row around = "xs" >
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>7</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>8</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>9</button>
+                          </Col>
 
-
-                <div>
-                  <Row around = "xs" >
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>0</button>
-                    </Col>
-                    
-                    < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
-                      <button>=</button>
-                    </Col>
-                    
-                   
-                  </ Row >
-                </div>
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>+</button>
+                          </Col>
+                          
+                        </ Row >
+                      </div>
 
 
+                      <div>
+                        <Row around = "xs" >
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>0</button>
+                          </Col>
+                          
+                          < Col  xs = {2}  sm = {2} md = {2} lg = {0}> 
+                            <button>=</button>
+                          </Col>
+                          
+                        
+                        </ Row >
+                      </div>
 
-            </div>
+
+
+                  </div>
+
+
+                </Row>
+              </Col>
+            </Row>
+
+           
 
           
           </div>
